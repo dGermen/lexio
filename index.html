@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Lexio</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <style id="lexio-splash-css">
+#lexio-splash{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;background:#141210;transition:opacity .35s ease}
+#lexio-splash.lx-hide{opacity:0;pointer-events:none}
+#lexio-splash .lx-name{color:#CE7C5B;font-family:Georgia,'Times New Roman',serif;font-size:34px;letter-spacing:.5px}
+#lexio-splash .lx-spin{width:26px;height:26px;border-radius:50%;border:3px solid rgba(206,124,91,.25);border-top-color:#CE7C5B;animation:lxspin .8s linear infinite}
+@keyframes lxspin{to{transform:rotate(360deg)}}
+</style>
+</head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="lexio-splash"><div class="lx-name">Lexio</div><div class="lx-spin"></div></div>
+    <div id="root"></div>
+  <script src="/lexio/_expo/static/js/web/entry-ca2fcf93972e2f60bb5558957fedf58a.js" defer></script>
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('lexio:settings')||'{}');var bg={dark:'#141210',midnight:'#0E1117',forest:'#0F1511',sepia:'#F4EDDF'}[s.theme]||'#141210';var el=document.getElementById('lexio-splash');if(el){el.style.background=bg;document.documentElement.style.backgroundColor=bg;if(s.theme==='sepia'){var n=el.querySelector('.lx-name');if(n)n.style.color='#BC5E38';var sp=el.querySelector('.lx-spin');if(sp)sp.style.borderTopColor='#BC5E38';}}}catch(e){}})();</script>
+</body>
+</html>
